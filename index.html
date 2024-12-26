@@ -1,581 +1,790 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Shri Gopalakrishna Lakshminarasimha Temple, Pallipady</title>
-      <meta name="description" content="A sacred temple located in Pallipady.">
-      <meta name="theme-color" content="#ffffff">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="robots" content="index, follow">
-      
-      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-      <link rel="manifest" href="favicon_io/site.webmanifest">
 
-      <!-- Open Graph Meta Tags for Multilingual Support -->
-      <!-- Facebook Meta Tags -->
-      <meta property="og:url" content="https://glntemple.org">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="Shri Gopalakrishna Lakshminarasimha Temple, Pallipady">
-      <meta property="og:description" content="A sacred temple located in Pallipady.">
-      <meta property="og:image" content="https://glntemple.org/images/og_img.jpg">
-      <meta property="og:logo" content="https://glntemple.org/images/logo.png">
-      <meta property="og:locale" content="en_US">
-      <meta property="og:locale:alternate" content="kn_IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Gopalakrishna Lakshminarasimha Temple, Pallipady</title>
+  <meta name="description" content="A sacred temple located in Pallipady.">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
 
-      <!-- Twitter Meta Tags -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta property="twitter:domain" content="glntemple.org">
-      <meta property="twitter:url" content="https://glntemple.org">
-      <meta name="twitter:title" content="Shri Gopalakrishna Lakshminarasimha Temple, Pallipady">
-      <meta name="twitter:description" content="A sacred temple located in Pallipady.">
-      <meta name="twitter:image" content="https://glntemple.org/images/og_img.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
 
-      <!-- Performance optimization: Preload critical resources -->
-      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
-      
-      <!-- Core CSS -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-             colors: {
-                primary: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
-                },
-                secondary: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
-                },
-                accent: {
-                  50: '#f8f8f8',
-                  100: '#e8e8e8',
-                  200: '#d3d3d3',
-                  300: '#a3a3a3',
-                  400: '#737373',
-                  500: '#525252',
-                  600: '#404040',
-                  700: '#262626',
-                  800: '#171717',
-                  900: '#0a0a0a',
-                  950: '#030303',
-                },
-              },
-              fontFamily: {
-                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
-              },
-              spacing: {
-                '18': '4.5rem',
-                '22': '5.5rem',
-                '30': '7.5rem',
-              },
-              maxWidth: {
-                '8xl': '88rem',
-                '9xl': '96rem',
-              },
-              animation: {
-                'fade-in': 'fadeIn 0.5s ease-in',
-                'fade-out': 'fadeOut 0.5s ease-out',
-                'slide-up': 'slideUp 0.5s ease-out',
-                'slide-down': 'slideDown 0.5s ease-out',
-                'slide-left': 'slideLeft 0.5s ease-out',
-                'slide-right': 'slideRight 0.5s ease-out',
-                'scale-in': 'scaleIn 0.5s ease-out',
-                'scale-out': 'scaleOut 0.5s ease-out',
-                'spin-slow': 'spin 3s linear infinite',
-                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                'bounce-slow': 'bounce 3s infinite',
-                'float': 'float 3s ease-in-out infinite',
-              },
-              keyframes: {
-                fadeIn: {
-                  '0%': { opacity: '0' },
-                  '100%': { opacity: '1' },
-                },
-                fadeOut: {
-                  '0%': { opacity: '1' },
-                  '100%': { opacity: '0' },
-                },
-                slideUp: {
-                  '0%': { transform: 'translateY(20px)', opacity: '0' },
-                  '100%': { transform: 'translateY(0)', opacity: '1' },
-                },
-                slideDown: {
-                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
-                  '100%': { transform: 'translateY(0)', opacity: '1' },
-                },
-                slideLeft: {
-                  '0%': { transform: 'translateX(20px)', opacity: '0' },
-                  '100%': { transform: 'translateX(0)', opacity: '1' },
-                },
-                slideRight: {
-                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
-                  '100%': { transform: 'translateX(0)', opacity: '1' },
-                },
-                scaleIn: {
-                  '0%': { transform: 'scale(0.9)', opacity: '0' },
-                  '100%': { transform: 'scale(1)', opacity: '1' },
-                },
-                scaleOut: {
-                  '0%': { transform: 'scale(1.1)', opacity: '0' },
-                  '100%': { transform: 'scale(1)', opacity: '1' },
-                },
-                float: {
-                  '0%, 100%': { transform: 'translateY(0)' },
-                  '50%': { transform: 'translateY(-10px)' },
-                },
-              },
-              aspectRatio: {
-                'portrait': '3/4',
-                'landscape': '4/3',
-                'ultrawide': '21/9',
-              },
+  <!-- Open Graph Meta Tags for Multilingual Support -->
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://glntemple.org">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shri Gopalakrishna Lakshminarasimha Temple, Pallipady">
+  <meta property="og:description" content="A sacred temple located in Pallipady.">
+  <meta property="og:image" content="https://glntemple.org/images/og_img.jpg">
+  <meta property="og:logo" content="https://glntemple.org/images/logo.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="kn_IN">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="glntemple.org">
+  <meta property="twitter:url" content="https://glntemple.org">
+  <meta name="twitter:title" content="Shri Gopalakrishna Lakshminarasimha Temple, Pallipady">
+  <meta name="twitter:description" content="A sacred temple located in Pallipady.">
+  <meta name="twitter:image" content="https://glntemple.org/images/og_img.jpg">
+
+  <!-- Performance optimization: Preload critical resources -->
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    as="style">
+
+  <!-- Core CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
+            },
+            secondary: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
+            },
+            accent: {
+              50: '#f8f8f8',
+              100: '#e8e8e8',
+              200: '#d3d3d3',
+              300: '#a3a3a3',
+              400: '#737373',
+              500: '#525252',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0a0a0a',
+              950: '#030303',
             },
           },
-          variants: {
-            extend: {
-              opacity: ['disabled'],
-              cursor: ['disabled'],
-              backgroundColor: ['active', 'disabled'],
-              textColor: ['active', 'disabled'],
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          spacing: {
+            '18': '4.5rem',
+            '22': '5.5rem',
+            '30': '7.5rem',
+          },
+          maxWidth: {
+            '8xl': '88rem',
+            '9xl': '96rem',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in',
+            'fade-out': 'fadeOut 0.5s ease-out',
+            'slide-up': 'slideUp 0.5s ease-out',
+            'slide-down': 'slideDown 0.5s ease-out',
+            'slide-left': 'slideLeft 0.5s ease-out',
+            'slide-right': 'slideRight 0.5s ease-out',
+            'scale-in': 'scaleIn 0.5s ease-out',
+            'scale-out': 'scaleOut 0.5s ease-out',
+            'spin-slow': 'spin 3s linear infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 3s infinite',
+            'float': 'float 3s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            fadeOut: {
+              '0%': { opacity: '1' },
+              '100%': { opacity: '0' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            slideDown: {
+              '0%': { transform: 'translateY(-20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            slideLeft: {
+              '0%': { transform: 'translateX(20px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            slideRight: {
+              '0%': { transform: 'translateX(-20px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            scaleIn: {
+              '0%': { transform: 'scale(0.9)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            scaleOut: {
+              '0%': { transform: 'scale(1.1)', opacity: '0' },
+              '100%': { transform: 'scale(1)', opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
             },
           },
-        }
-      </script>
+          aspectRatio: {
+            'portrait': '3/4',
+            'landscape': '4/3',
+            'ultrawide': '21/9',
+          },
+        },
+      },
+      variants: {
+        extend: {
+          opacity: ['disabled'],
+          cursor: ['disabled'],
+          backgroundColor: ['active', 'disabled'],
+          textColor: ['active', 'disabled'],
+        },
+      },
+    }
+  </script>
 
-      <!-- Utilities and Components -->
-      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
-      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
-      
-      <!-- Optimized Font Loading -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-      
-      <!-- Icons -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Utilities and Components -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
 
-      <!-- Base Styles -->
-      <style>
+  <!-- Optimized Font Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-        * {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;     /* Firefox */
-        }
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        /* Webkit browsers like Chrome, Safari, newer Edge */
-        *::-webkit-scrollbar {
-          display: none;
-          width: 0;
-          height: 0;
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-          width: 0px;
-        }
-        
-        ::-webkit-scrollbar-track {
-          background: #f1f1f1;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-          background: #888;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-          background: #666;
-        }
+  <!-- Base Styles -->
+  <style>
+    * {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
 
-        /* Remove tap highlight on mobile */
-        * {
-          -webkit-tap-highlight-color: transparent;
-        }
+    /* Webkit browsers like Chrome, Safari, newer Edge */
+    *::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
 
-        /* Improve text rendering */
-        body {
-          text-rendering: optimizeLegibility;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
 
-        /* Focus outline styles */
-        :focus-visible {
-          outline: 2px solid currentColor;
-          outline-offset: 2px;
-        }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
 
-        /* Print styles */
-        @media print {
-          .no-print {
-            display: none !important;
-          }
-          
-          a[href]:after {
-            content: " (" attr(href) ")";
-          }
-        }
-      </style>
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
 
-      <!-- Enhanced Image Handler -->
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                  const tempImage = new Image();
-                  tempImage.onload = () => {
-                    img.src = img.dataset.src;
-                    img.classList.remove('opacity-0');
-                    img.classList.add('opacity-100');
-                  };
-                  tempImage.src = img.dataset.src;
-                  img.removeAttribute('data-src');
-                  observer.unobserve(img);
-                }
-              }
-            });
-          }, {
-            rootMargin: '50px 0px',
-            threshold: 0.01
-          });
+    ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
 
-          const loadImage = (img) => {
-            if ('loading' in HTMLImageElement.prototype) {
-              img.loading = 'lazy';
-            }
-            
-            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
-            
-            img.onerror = () => {
-              const width = img.getAttribute('width') || img.clientWidth || 300;
-              const height = img.getAttribute('height') || img.clientHeight || 200;
-              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
-              img.alt = 'Image unavailable';
-              img.classList.remove('opacity-0');
-              img.classList.add('opacity-100', 'error-image');
-            };
+    /* Remove tap highlight on mobile */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
 
+    /* Improve text rendering */
+    body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Focus outline styles */
+    :focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+
+    /* Print styles */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
+    }
+  </style>
+
+  <!-- Enhanced Image Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
             if (img.dataset.src) {
-              imageObserver.observe(img);
-            } else {
-              img.classList.remove('opacity-0');
-              img.classList.add('opacity-100');
+              const tempImage = new Image();
+              tempImage.onload = () => {
+                img.src = img.dataset.src;
+                img.classList.remove('opacity-0');
+                img.classList.add('opacity-100');
+              };
+              tempImage.src = img.dataset.src;
+              img.removeAttribute('data-src');
+              observer.unobserve(img);
             }
-          };
-
-          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
-
-          // Watch for dynamically added images
-          new MutationObserver((mutations) => {
-            mutations.forEach(mutation => {
-              mutation.addedNodes.forEach(node => {
-                if (node.nodeType === 1) {
-                  if (node.tagName === 'IMG') {
-                    loadImage(node);
-                  }
-                  node.querySelectorAll('img').forEach(loadImage);
-                }
-              });
-            });
-          }).observe(document.body, {
-            childList: true,
-            subtree: true
-          });
+          }
         });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+      });
 
-        // Performance monitoring
-        if ('performance' in window && 'PerformanceObserver' in window) {
-          // Create performance observer
-          const observer = new PerformanceObserver((list) => {
-            const entries = list.getEntries();
-            entries.forEach((entry) => {
-              if (entry.entryType === 'largest-contentful-paint') {
-                // console.log(`LCP: ${entry.startTime}ms`);
-              }
-              if (entry.entryType === 'first-input') {
-                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
-              }
-              if (entry.entryType === 'layout-shift') {
-                // console.log(`CLS: ${entry.value}`);
-              }
-            });
-          });
-
-          // Observe performance metrics
-          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-
-          // Log basic performance metrics
-          window.addEventListener('load', () => {
-            const timing = performance.getEntriesByType('navigation')[0];
-            console.log({
-              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
-              'TCP Connection': timing.connectEnd - timing.connectStart,
-              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
-              'Page Load': timing.loadEventEnd - timing.navigationStart
-            });
-          });
+      const loadImage = (img) => {
+        if ('loading' in HTMLImageElement.prototype) {
+          img.loading = 'lazy';
         }
 
-        // Handle offline/online status
-        window.addEventListener('online', () => {
-          document.body.classList.remove('offline');
-          console.log('Connection restored');
+        img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+
+        img.onerror = () => {
+          const width = img.getAttribute('width') || img.clientWidth || 300;
+          const height = img.getAttribute('height') || img.clientHeight || 200;
+          img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+          img.alt = 'Image unavailable';
+          img.classList.remove('opacity-0');
+          img.classList.add('opacity-100', 'error-image');
+        };
+
+        if (img.dataset.src) {
+          imageObserver.observe(img);
+        } else {
+          img.classList.remove('opacity-0');
+          img.classList.add('opacity-100');
+        }
+      };
+
+      document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+      // Watch for dynamically added images
+      new MutationObserver((mutations) => {
+        mutations.forEach(mutation => {
+          mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1) {
+              if (node.tagName === 'IMG') {
+                loadImage(node);
+              }
+              node.querySelectorAll('img').forEach(loadImage);
+            }
+          });
         });
-        
-        window.addEventListener('offline', () => {
-          document.body.classList.add('offline');
-          console.log('Connection lost');
+      }).observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    });
+
+    // Performance monitoring
+    if ('performance' in window && 'PerformanceObserver' in window) {
+      // Create performance observer
+      const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        entries.forEach((entry) => {
+          if (entry.entryType === 'largest-contentful-paint') {
+            // console.log(`LCP: ${entry.startTime}ms`);
+          }
+          if (entry.entryType === 'first-input') {
+            // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+          }
+          if (entry.entryType === 'layout-shift') {
+            // console.log(`CLS: ${entry.value}`);
+          }
         });
-      </script>
-   </head>
-   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
-      <!-- Skip to main content link for accessibility -->
-      <a href="#main-content" 
-         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
-         Skip to main content
-      </a>
+      });
 
-      <!-- Header -->
-      <header class="relative z-50 bg-white dark:bg-gray-900">
-        <!-- Header content goes here -->
-      </header>
+      // Observe performance metrics
+      observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
 
-      <!-- Main content area -->
-      <main id="main-content" class="flex-1 relative ">
-        <!-- Content will be injected here -->
-      </main>
+      // Log basic performance metrics
+      window.addEventListener('load', () => {
+        const timing = performance.getEntriesByType('navigation')[0];
+        console.log({
+          'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+          'TCP Connection': timing.connectEnd - timing.connectStart,
+          'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+          'Page Load': timing.loadEventEnd - timing.navigationStart
+        });
+      });
+    }
 
-   </body>
-</html><htmlCode>
-<div id="root">
-  <section id="navbar_hero" class="relative">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-orange-50/95 backdrop-blur-lg border-b border-orange-100">
+    // Handle offline/online status
+    window.addEventListener('online', () => {
+      document.body.classList.remove('offline');
+      console.log('Connection restored');
+    });
+
+    window.addEventListener('offline', () => {
+      document.body.classList.add('offline');
+      console.log('Connection lost');
+    });
+  </script>
+</head>
+
+<body class="antialiased text-gray-800 min-h-screen flex flex-col">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+    Skip to main content
+  </a>
+
+  <!-- Header -->
+  <header class="relative z-50 bg-white dark:bg-gray-900">
+    <!-- Header content goes here -->
+  </header>
+
+  <!-- Main content area -->
+  <main id="main-content" class="flex-1 relative ">
+    <!-- Content will be injected here -->
+  </main>
+
+</body>
+
+</html>
+<htmlCode>
+  <div id="root">
+    <section id="navbar_hero" class="relative">
+      <!-- Navigation -->
+      <nav class="fixed top-0 left-0 right-0 z-50 bg-orange-50/95 backdrop-blur-lg border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo/Brand -->
+
+            <div class="flex-shrink-0 flex items-center">
+              <img src="images/logo.png" alt="" class="h-8 w-8 mr-2">
+              <h1 class="text-2xl font-bold text-orange-800">GLN Temple</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-center space-x-8">
+                <a href="#temple_timings"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Timings</a>
+                <a href="#upcoming_events"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Events</a>
+                <a href="#temple_history"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">History</a>
+                <a href="#media_gallery"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Gallery</a>
+                <a href="#donation_section"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Donate</a>
+                <a href="#contact_info"
+                  class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Contact</a>
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button type="button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-orange-800 hover:text-orange-700 focus:outline-none"
+                aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#temple_timings"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Timings</a>
+            <a href="#upcoming_events"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Events</a>
+            <a href="#temple_history"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">History</a>
+            <a href="#media_gallery"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Gallery</a>
+            <a href="#donation_section"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Donate</a>
+            <a href="#contact_info"
+              class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="pt-16 bg-gradient-to-b from-orange-50 to-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-900 mb-6">
+            Shri Gopalakrishna Lakshminarasimha Temple
+          </h1>
+          <p class="text-xl sm:text-2xl text-orange-800 mb-8">Pallipady - A Sacred Space for Divine Connection</p>
+          <div class="flex justify-center space-x-4">
+            <a href="#temple_timings"
+              class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
+              View Timings
+            </a>
+            <a href="#upcoming_events"
+              class="inline-flex items-center px-6 py-3 border border-orange-600 text-base font-medium rounded-md text-orange-600 bg-transparent hover:bg-orange-50">
+              Upcoming Events
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+
+  <div id="root">
+    <section id="temple_history" class="py-24 bg-gradient-to-b from-orange-50 to-orange-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-          <!-- Logo/Brand -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Temple History</h2>
+          <p class="text-lg text-orange-700">A Sacred Journey Through Time</p>
+        </div>
 
-          <div class="flex-shrink-0 flex items-center">
-            <img src="images/logo.png" alt="" class="h-8 w-8 mr-2">
-            <h1 class="text-2xl font-bold text-orange-800">GLN Temple</h1>
-          </div>
-
-          <!-- Desktop Navigation -->
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-center space-x-8">
-              <a href="#temple_timings" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Timings</a>
-              <a href="#upcoming_events" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Events</a>
-              <a href="#temple_history" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">History</a>
-              <a href="#media_gallery" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Gallery</a>
-              <a href="#donation_section" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Donate</a>
-              <a href="#contact_info" class="text-orange-900 hover:text-orange-700 px-3 py-2 text-sm font-medium">Contact</a>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Main Content -->
+          <div class="lg:col-span-8 space-y-8">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3 class="text-2xl font-semibold text-orange-900 mb-6">Origins and Establishment</h3>
+              <div class="prose prose-orange max-w-none">
+                <p class="text-orange-800 mb-4">
+                  The Shri Gopalakrishna Lakshminarasimha Temple in Pallipady has a profound history that spans several generations. Originally under Jain rule, the temple later came under the administration of Brahmin families, who performed important rituals like Navaratri and Ananta Chaturdashi. The sacred temple has long been a cornerstone of the local community's spiritual life.
+                </p>
+                <p class="text-orange-800 mb-4">
+                  Dedicated to both Lord Krishna and Lord Narasimha, the temple holds great religious importance in the region. Its architecture blends traditional South Indian temple styles, drawing influences from both Karnataka and Kerala, reflecting its deep-rooted heritage and cultural significance.
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-orange-800 hover:text-orange-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
-              <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <!-- Sidebar -->
+          <div class="lg:col-span-4 space-y-8">
+            <!-- Timeline -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h4 class="text-xl font-semibold text-orange-900 mb-4">Key Milestones</h4>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-12 text-right mr-4">
+                    <span class="text-orange-600 font-medium">MidAge</span>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="text-orange-800">Jain rule, later Brahmin settlement.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-12 text-right mr-4">
+                    <span class="text-orange-600 font-medium">1934</span>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="text-orange-800">Flood destroyed temple; rebuilt by Subbarao & family.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-12 text-right mr-4">
+                    <span class="text-orange-600 font-medium">1980s</span>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="text-orange-800">Flood damaged temple again; rebuilt by Sri Shankaranarayana Rao and locals; idols found under banyan.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-12 text-right mr-4">
+                    <span class="text-orange-600 font-medium">2020</span>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="text-orange-800">Temple reconstruction started.</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-12 text-right mr-4">
+                    <span class="text-orange-600 font-medium">2022</span>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="text-orange-800">Temple reconstruction completed.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+
+  <div id="root">
+    <section id="media_gallery" class="py-24 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Media Gallery</h2>
+          <p class="text-lg text-orange-700">Experience divine moments through our photo and video collections</p>
+        </div>
+
+        <!-- Gallery Tabs -->
+        <div class="mb-12">
+          <div class="flex justify-center space-x-4">
+            <a href="#media_gallery" class="px-6 py-2 bg-orange-600 text-white rounded-full font-medium">Photos</a>
+            <a href="#videos_section"
+              class="px-6 py-2 bg-white text-orange-600 rounded-full font-medium hover:bg-orange-50">Videos</a>
+          </div>
+        </div>
+
+        <!-- Photo Albums Section -->
+        <div id="photos_section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Album 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-orange-900 mb-2">Temple Construction Stages</h3>
+              <p class="text-orange-700 mb-4">Documentation of temple construction and renovation phases</p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-orange-600">527 photos</span>
+                <a href="https://photos.app.goo.gl/gMevnb5J1itzCRLw6"
+                  class="text-orange-600 hover:text-orange-700 font-medium">View Album</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Section -->
+        <div id="videos_section" class="mt-16">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-semibold text-orange-900">Featured Videos</h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- YouTube Embed Placeholder 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div class="aspect-w-16 aspect-h-9 bg-orange-100 flex items-center justify-center">
+                <div class="text-orange-600">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/zGOLIZ0L7rQ?si=TlAVTFhk40rXhl2J"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-lg font-medium text-orange-900">Temple Done View</h4>
+                <p class="text-orange-700 mt-1">Special drone coverage of our temple</p>
+              </div>
+            </div>
+
+            <!-- YouTube Embed Placeholder 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div class="aspect-w-16 aspect-h-9 bg-orange-100 flex items-center justify-center">
+                <div class="text-orange-600">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TKardeWoKBM?si=d2Qdn2-X_iLIM0QI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="text-lg font-medium text-orange-900"> Pallipady Bhramhakalasha 2022 </h4>
+                <p class="text-orange-700 mt-1">Divine moments of Bhramhakalasha</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouTube Channel Link -->
+          <div class="text-center mt-8">
+            <a href="https://www.youtube.com/channel/UCsvRof_-0CaIIrakWbPRrCw?sub_confirmation=1" target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
               </svg>
-            </button>
+              <button>
+                Subscribe Now
+              </button>
+            </a>
           </div>
         </div>
       </div>
-
-      <!-- Mobile menu -->
-      <div class="md:hidden hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <a href="#temple_timings" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Timings</a>
-          <a href="#upcoming_events" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Events</a>
-          <a href="#temple_history" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">History</a>
-          <a href="#media_gallery" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Gallery</a>
-          <a href="#donation_section" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Donate</a>
-          <a href="#contact_info" class="block px-3 py-2 text-base font-medium text-orange-900 hover:text-orange-700">Contact</a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="pt-16 bg-gradient-to-b from-orange-50 to-orange-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-900 mb-6">
-          Shri Gopalakrishna Lakshminarasimha Temple
-        </h1>
-        <p class="text-xl sm:text-2xl text-orange-800 mb-8">Pallipady - A Sacred Space for Divine Connection</p>
-        <div class="flex justify-center space-x-4">
-          <a href="#temple_timings" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
-            View Timings
-          </a>
-          <a href="#upcoming_events" class="inline-flex items-center px-6 py-3 border border-orange-600 text-base font-medium rounded-md text-orange-600 bg-transparent hover:bg-orange-50">
-            Upcoming Events
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="temple_timings" class="py-24 bg-orange-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Temple Timings</h2>
-        <p class="text-lg text-orange-700">Daily Worship Schedule & Rituals</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <!-- Morning Timings -->
-        <div class="bg-white rounded-lg shadow-lg p-6 border border-orange-100">
-          <div class="text-center mb-4">
-            <h3 class="text-xl font-semibold text-orange-900">Morning Rituals</h3>
-            <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
-          </div>
-          <ul class="space-y-4">
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Temple Opens</span>
-              <span class="font-medium text-orange-900">8:00 AM</span>
-            </li>
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Morning Aarti</span>
-              <span class="font-medium text-orange-900">9:30 AM</span>
-            </li>
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Temple Closes</span>
-              <span class="font-medium text-orange-900">10:00 AM</span>
-            </li>
-          </ul>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+  <div id="root">
+    <section id="temple_timings" class="py-24 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Temple Timings</h2>
+          <p class="text-lg text-orange-700">Daily Worship Schedule & Rituals</p>
         </div>
 
-        <!-- Evening Timings -->
-        <div class="bg-white rounded-lg shadow-lg p-6 border border-orange-100">
-          <div class="text-center mb-4">
-            <h3 class="text-xl font-semibold text-orange-900">Evening Rituals</h3>
-            <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
-          </div>
-          <ul class="space-y-4">
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Temple Reopens</span>
-              <span class="font-medium text-orange-900">6:00 PM</span>
-            </li>
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Dipaprajvalanam</span>
-              <span class="font-medium text-orange-900">6:15 PM</span>
-            </li>
-            <li class="flex justify-between items-center">
-              <span class="text-orange-800">Temple Closes</span>
-              <span class="font-medium text-orange-900">6:30 PM</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Special Note -->
-      <div class="mt-12 bg-orange-100 rounded-lg p-6 text-center">
-        <h4 class="text-lg font-semibold text-orange-900 mb-2">Special Festival Timings</h4>
-        <p class="text-orange-800">Temple timings may vary during festivals and special occasions. Please check our events section for updates.</p>
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="upcoming_events" class="py-24 bg-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Upcoming Events</h2>
-        <p class="text-lg text-orange-700">Join us in celebrating these auspicious occasions</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Event Card 1 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Upcoming</span>
-              <span class="text-orange-600 font-medium">March 25, 2024</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Morning Timings -->
+          <div class="bg-white rounded-lg shadow-lg p-6 border border-orange-100">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold text-orange-900">Morning Rituals</h3>
+              <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
             </div>
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Ram Navami Celebration</h3>
-            <p class="text-orange-700 mb-4">Special abhisheka and cultural programs celebrating Lord Ram's birth</p>
-            <div class="flex items-center text-orange-600">
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>6:00 AM - 9:00 PM</span>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Temple Opens</span>
+                <span class="font-medium text-orange-900">8:00 AM</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Morning Aarti</span>
+                <span class="font-medium text-orange-900">9:30 AM</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Temple Closes</span>
+                <span class="font-medium text-orange-900">10:00 AM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Evening Timings -->
+          <div class="bg-white rounded-lg shadow-lg p-6 border border-orange-100">
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-semibold text-orange-900">Evening Rituals</h3>
+              <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
             </div>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Temple Reopens</span>
+                <span class="font-medium text-orange-900">6:00 PM</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Dipaprajvalanam</span>
+                <span class="font-medium text-orange-900">6:15 PM</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-orange-800">Temple Closes</span>
+                <span class="font-medium text-orange-900">6:30 PM</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- Event Card 2 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Monthly</span>
-              <span class="text-orange-600 font-medium">April 14, 2024</span>
+        <!-- Special Note -->
+        <div class="mt-12 bg-orange-100 rounded-lg p-6 text-center">
+          <h4 class="text-lg font-semibold text-orange-900 mb-2">Special Festival Timings</h4>
+          <p class="text-orange-800">Temple timings may vary during festivals and special occasions. Please check our
+            events section for updates.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+  <div id="root">
+    <section id="upcoming_events" class="py-24 bg-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Upcoming Events</h2>
+          <p class="text-lg text-orange-700">Join us in celebrating these auspicious occasions</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Event Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Upcoming</span>
+                <span class="text-orange-600 font-medium">Thur, 6 Feb, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-orange-900 mb-2">Pallipady Parthistavardanthi Mahotsava 2025</h3>
+              <p class="text-orange-700 mb-4">Annual celebration with special poojas, yakshagana and prasada
+                distribution</p>
+              <div class="flex items-center text-orange-600">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>6:00 AM - 12:00 PM</span>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Masa Shivaratri</h3>
-            <p class="text-orange-700 mb-4">Monthly special pooja and abhisheka to Lord Shiva</p>
-            <div class="flex items-center text-orange-600">
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>6:00 PM - 9:00 PM</span>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Annual</span>
+                <span class="text-orange-600 font-medium">Sun, 11 May, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-orange-900 mb-2">Narasimha Jayanthi Mahothsava 2025</h3>
+              <p class="text-orange-700 mb-4">Honoring Lord Narasimha’s divine appearance with special rituals, Vedic
+                chanting, and cultural festivities.</p>
+              <div class="flex items-center text-orange-600">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>6:00 AM - 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Annual</span>
+                <span class="text-orange-600 font-medium">Sat, 16 Aug - Sun, 17 Aug, 2025</span>
+              </div>
+              <h3 class="text-xl font-semibold text-orange-900 mb-2">Krishna Janmashtami</h3>
+              <p class="text-orange-700 mb-4">the joyous occasion marking Lord Krishna's divine birth, with vibrant
+                rituals, devotional singing, and cultural festivities.</p>
+              <div class="flex items-center text-orange-600">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span>16 Aug 4:00 PM - 17 Aug, 1:00 PM</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Event Card 3 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Special</span>
-              <span class="text-orange-600 font-medium">April 21, 2024</span>
-            </div>
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Temple Anniversary</h3>
-            <p class="text-orange-700 mb-4">Annual celebration with special poojas and prasada distribution</p>
-            <div class="flex items-center text-orange-600">
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>7:00 AM - 8:00 PM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Google Calendar Integration -->
+        <!-- Google Calendar Integration
       <div class="mt-12 text-center">
         <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors duration-300">
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -583,593 +792,410 @@
           </svg>
           Add to Calendar
         </a>
-      </div>
+      </div> -->
 
-      <!-- Notice Board -->
-      <div class="mt-12 bg-orange-50 rounded-lg p-6">
-        <div class="text-center">
-          <h4 class="text-lg font-semibold text-orange-900 mb-2">Important Notice</h4>
-          <p class="text-orange-800">All events are subject to local guidelines and weather conditions. Please follow our social media channels for real-time updates.</p>
+        <!-- Notice Board -->
+        <div class="mt-12 bg-orange-50 rounded-lg p-6">
+          <div class="text-center">
+            <h4 class="text-lg font-semibold text-orange-900 mb-2">Important Notice</h4>
+            <p class="text-orange-800">All events are subject to local guidelines and weather conditions. Please follow
+              our social media channels for real-time updates.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="temple_history" class="py-24 bg-gradient-to-b from-orange-50 to-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Temple History</h2>
-        <p class="text-lg text-orange-700">A Sacred Journey Through Time</p>
-      </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+  <div id="root">
+    <section id="donation_section" class="py-24 bg-gradient-to-b from-orange-50 to-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Support the Temple</h2>
+          <p class="text-lg text-orange-700">Your contributions help maintain and develop our sacred space</p>
+        </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <!-- Main Content -->
-        <div class="lg:col-span-8 space-y-8">
-          <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-semibold text-orange-900 mb-6">Origins and Establishment</h3>
-            <div class="prose prose-orange max-w-none">
-              <p class="text-orange-800 mb-4">
-                The Shri Gopalakrishna Lakshminarasimha Temple in Pallipady has a rich history dating back several generations. Founded by devoted locals, this sacred place has been a spiritual anchor for the community for many decades.
-              </p>
-              <p class="text-orange-800 mb-4">
-                The temple's unique feature is its dedication to both Lord Krishna and Lord Narasimha, making it a significant place of worship in the region. The architectural style reflects the traditional South Indian temple architecture, incorporating elements from both Karnataka and Kerala temple designs.
-              </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Donation Information -->
+          <div class="space-y-8">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3 class="text-2xl font-semibold text-orange-900 mb-6">Ways to Contribute</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <!-- Temple Maintenance Icon -->
+                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3v18h18V3H3zm16 16H5V5h14v14zM9 9h6v6H9V9z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium text-orange-900">Temple Maintenance</h4>
+                    <p class="mt-2 text-orange-700">Support daily operations and maintenance of the temple premises</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <!-- Festival Fund Icon -->
+                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 2l1.09 3.26L16 6l-2.5 1.74L12 11l-1.5-3.26L8 6l2.91-.74L12 2zM2 12l3.26-1.09L6 8l1.74 2.5L11 12l-3.26 1.5L6 16l-1.74-2.5L2 12zm20 0l-3.26 1.09L18 16l-1.74-2.5L13 12l3.26-1.5L18 8l1.74 2.5L22 12z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium text-orange-900">Festival Fund</h4>
+                    <p class="mt-2 text-orange-700">Contribute towards annual festivals and special events</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <!-- Annadana Seva Icon -->
+                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 10H3v10h18V10zM5 12h14v6H5v-6zM7 4h10v2H7V4z"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium text-orange-900">Annadana Seva</h4>
+                    <p class="mt-2 text-orange-700">Support the temple's food distribution programs</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <!-- Seva Offerings Icon -->
+                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-medium text-orange-900">Seva Offerings</h4>
+                    <p class="mt-2 text-orange-700">List of Seva offerings with prices</p>
+                    <table class="mt-4 w-full text-left border-collapse">
+                      <thead>
+                        <tr>
+                          <th class="border-b-2 border-orange-200 px-4 py-2 text-orange-900">Seva</th>
+                          <th class="border-b-2 border-orange-200 px-4 py-2 text-orange-900">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Sasvatha Nithya Pooje</td>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
+                        </tr>
+                        <tr>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Halu Payasa seve</td>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
+                        </tr>
+                        <tr>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Sarvalankara seve</td>
+                          <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- UPI Payment Section -->
           <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-semibold text-orange-900 mb-6">Spiritual Significance</h3>
-            <div class="prose prose-orange max-w-none">
-              <p class="text-orange-800 mb-4">
-                The temple is known for its powerful spiritual energy and the divine presence of its deities. The main sanctum houses the beautiful idols of Lord Gopalakrishna and Lord Lakshminarasimha, crafted by skilled artisans according to traditional Agama Shastra guidelines.
-              </p>
-              <p class="text-orange-800">
-                Over the years, the temple has been a center for various religious activities, festivals, and cultural programs that have helped preserve and promote our rich Hindu heritage and traditions.
-              </p>
-            </div>
-          </div>
-        </div>
+            <h3 class="text-2xl font-semibold text-orange-900 mb-6">Make a Donation</h3>
 
-        <!-- Sidebar -->
-        <div class="lg:col-span-4 space-y-8">
-          <!-- Timeline -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h4 class="text-xl font-semibold text-orange-900 mb-4">Key Milestones</h4>
+            <!-- UPI QR Section -->
+            <div class="text-center mb-8">
+              <div class="w-48 h-48 mx-auto bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+                <img src="images/upi-qr.jpeg" alt="UPI QR Code" class="w-full h-full object-cover rounded-lg">
+              </div>
+              <p class="text-orange-700">Scan QR code with any UPI app</p>
+            </div>
+
+            <!-- UPI ID Section -->
             <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="flex-shrink-0 w-12 text-right mr-4">
-                  <span class="text-orange-600 font-medium">1950</span>
-                </div>
-                <div class="flex-grow">
-                  <p class="text-orange-800">Initial temple foundation laid</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="flex-shrink-0 w-12 text-right mr-4">
-                  <span class="text-orange-600 font-medium">1965</span>
-                </div>
-                <div class="flex-grow">
-                  <p class="text-orange-800">Main shrine construction completed</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="flex-shrink-0 w-12 text-right mr-4">
-                  <span class="text-orange-600 font-medium">1980</span>
-                </div>
-                <div class="flex-grow">
-                  <p class="text-orange-800">Major renovation works</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="flex-shrink-0 w-12 text-right mr-4">
-                  <span class="text-orange-600 font-medium">2000</span>
-                </div>
-                <div class="flex-grow">
-                  <p class="text-orange-800">Golden jubilee celebrations</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Cultural Heritage -->
-          <div class="bg-white rounded-lg shadow-lg p-6">
-            <h4 class="text-xl font-semibold text-orange-900 mb-4">Cultural Heritage</h4>
-            <ul class="space-y-3 text-orange-800">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-orange-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Traditional Festivals
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-orange-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Vedic Rituals
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-orange-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Cultural Programs
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-orange-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                </svg>
-                Community Services
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="media_gallery" class="py-24 bg-orange-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Media Gallery</h2>
-        <p class="text-lg text-orange-700">Experience divine moments through our photo and video collections</p>
-      </div>
-
-      <!-- Gallery Tabs -->
-      <div class="mb-12">
-        <div class="flex justify-center space-x-4">
-          <a href="#media_gallery" class="px-6 py-2 bg-orange-600 text-white rounded-full font-medium">Photos</a>
-          <a href="#videos_section" class="px-6 py-2 bg-white text-orange-600 rounded-full font-medium hover:bg-orange-50">Videos</a>          
-          <!-- <button class="px-6 py-2 bg-orange-600 text-white rounded-full font-medium">Photos</button>
-          <button class="px-6 py-2 bg-white text-orange-600 rounded-full font-medium hover:bg-orange-50">Videos</button> -->
-        </div>
-      </div>
-
-      <!-- Photo Albums Section -->
-      <div id="photos_section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Album 1 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Temple Construction Stages</h3>
-            <p class="text-orange-700 mb-4">Documentation of temple construction and renovation phases</p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-orange-600">527 photos</span>
-              <a href="https://photos.app.goo.gl/gMevnb5J1itzCRLw6" class="text-orange-600 hover:text-orange-700 font-medium">View Album</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Album 2 -->
-        <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Festival Celebrations</h3>
-            <p class="text-orange-700 mb-4">Memorable moments from various festival celebrations</p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-orange-600">56 photos</span>
-              <a href="#" class="text-orange-600 hover:text-orange-700 font-medium">View Album</a>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Album 3 -->
-        <!-- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-orange-900 mb-2">Daily Rituals</h3>
-            <p class="text-orange-700 mb-4">Photos of daily poojas and special ceremonies</p>
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-orange-600">32 photos</span>
-              <a href="#" class="text-orange-600 hover:text-orange-700 font-medium">View Album</a>
-            </div>
-          </div>
-        </div> -->
-      </div>
-
-      <!-- YouTube Section -->
-      <div id="videos_section" class="mt-16">
-        <div class="text-center mb-8">
-          <h3 class="text-2xl font-semibold text-orange-900">Featured Videos</h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- YouTube Embed Placeholder 1 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="aspect-w-16 aspect-h-9 bg-orange-100 flex items-center justify-center">
-              <div class="text-orange-600">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGOLIZ0L7rQ?si=TlAVTFhk40rXhl2J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="p-4">
-              <h4 class="text-lg font-medium text-orange-900">Temple Done View</h4>
-              <p class="text-orange-700 mt-1">Special drone coverage of our temple</p>
-            </div>
-          </div>
-
-          <!-- YouTube Embed Placeholder 2 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="aspect-w-16 aspect-h-9 bg-orange-100 flex items-center justify-center">
-              <div class="text-orange-600">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TKardeWoKBM?si=d2Qdn2-X_iLIM0QI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="p-4">
-              <h4 class="text-lg font-medium text-orange-900"> Pallipady Bhramhakalasha 2022 </h4>
-              <p class="text-orange-700 mt-1">Divine moments of Bhramhakalasha</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- YouTube Channel Link -->
-        <div class="text-center mt-8">
-          <a href="https://www.youtube.com/channel/UCsvRof_-0CaIIrakWbPRrCw?sub_confirmation=1" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300">
-            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            <button>
-              Subscribe Now
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="donation_section" class="py-24 bg-gradient-to-b from-orange-50 to-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Support the Temple</h2>
-        <p class="text-lg text-orange-700">Your contributions help maintain and develop our sacred space</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Donation Information -->
-        <div class="space-y-8">
-          <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-semibold text-orange-900 mb-6">Ways to Contribute</h3>
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <!-- Temple Maintenance Icon -->
-                  <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18V3H3zm16 16H5V5h14v14zM9 9h6v6H9V9z"></path>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <h4 class="text-lg font-medium text-orange-900">Temple Maintenance</h4>
-                  <p class="mt-2 text-orange-700">Support daily operations and maintenance of the temple premises</p>
+              <div class="p-4 bg-orange-50 rounded-lg">
+                <p class="text-orange-900 font-medium">UPI ID:</p>
+                <div class="flex items-center justify-between mt-2">
+                  <code class="text-orange-800">shrig94811134@barodampay</code>
+                  <button class="text-orange-600 hover:text-orange-700">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                      </path>
+                    </svg>
+                  </button>
                 </div>
               </div>
 
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <!-- Festival Fund Icon -->
-                  <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l1.09 3.26L16 6l-2.5 1.74L12 11l-1.5-3.26L8 6l2.91-.74L12 2zM2 12l3.26-1.09L6 8l1.74 2.5L11 12l-3.26 1.5L6 16l-1.74-2.5L2 12zm20 0l-3.26 1.09L18 16l-1.74-2.5L13 12l3.26-1.5L18 8l1.74 2.5L22 12z"></path>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <h4 class="text-lg font-medium text-orange-900">Festival Fund</h4>
-                  <p class="mt-2 text-orange-700">Contribute towards annual festivals and special events</p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <!-- Annadana Seva Icon -->
-                  <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10H3v10h18V10zM5 12h14v6H5v-6zM7 4h10v2H7V4z"></path>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <h4 class="text-lg font-medium text-orange-900">Annadana Seva</h4>
-                  <p class="mt-2 text-orange-700">Support the temple's food distribution programs</p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <!-- Seva Offerings Icon -->
-                  <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <div class="ml-4">
-                  <h4 class="text-lg font-medium text-orange-900">Seva Offerings</h4>
-                  <p class="mt-2 text-orange-700">List of Seva offerings with prices</p>
-                  <table class="mt-4 w-full text-left border-collapse">
-                    <thead>
-                      <tr>
-                        <th class="border-b-2 border-orange-200 px-4 py-2 text-orange-900">Seva</th>
-                        <th class="border-b-2 border-orange-200 px-4 py-2 text-orange-900">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Sasvatha Nithya Pooje</td>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
-                      </tr>
-                      <tr>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Halu Payasa seve</td>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
-                      </tr>
-                      <tr>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">Sarvalankara seve</td>
-                        <td class="border-b border-orange-200 px-4 py-2 text-orange-700">₹200</td>
-                      </tr>
-                      <!-- Add more rows as needed -->
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- UPI Payment Section -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <h3 class="text-2xl font-semibold text-orange-900 mb-6">Make a Donation</h3>
-          
-          <!-- UPI QR Section -->
-          <div class="text-center mb-8">
-            <div class="w-48 h-48 mx-auto bg-gray-100 rounded-lg flex items-center justify-center mb-4">
-              <img src="images/upi-qr.jpeg" alt="UPI QR Code" class="w-full h-full object-cover rounded-lg">
-            </div>
-            <p class="text-orange-700">Scan QR code with any UPI app</p>
-          </div>
-
-          <!-- UPI ID Section -->
-          <div class="space-y-4">
-            <div class="p-4 bg-orange-50 rounded-lg">
-              <p class="text-orange-900 font-medium">UPI ID:</p>
-              <div class="flex items-center justify-between mt-2">
-                <code class="text-orange-800">shrig94811134@barodampay</code>
-                <button class="text-orange-600 hover:text-orange-700">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                  </svg>
+              <!-- Direct Payment Buttons -->
+              <div class="grid grid-cols-2 gap-4">
+                <button
+                  class="w-full py-3 px-4 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
+                  Google Pay
+                </button>
+                <button
+                  class="w-full py-3 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300">
+                  PhonePe
                 </button>
               </div>
             </div>
 
-            <!-- Direct Payment Buttons -->
-            <div class="grid grid-cols-2 gap-4">
-              <button class="w-full py-3 px-4 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
-                Google Pay
-              </button>
-              <button class="w-full py-3 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300">
-                PhonePe
-              </button>
+            <!-- Note -->
+            <div class="mt-8 text-sm text-orange-700 text-center">
+              <p class="mt-2">For donation/seva receipt, please email your transaction details to:</p>
+              <p class="font-medium text-orange-900">gopalakrishnalakshminarasimha@gmail.com</p>
             </div>
           </div>
 
-          <!-- Note -->
-          <div class="mt-8 text-sm text-orange-700 text-center">
-            <p class="mt-2">For donation/seva receipt, please email your transaction details to:</p>
-            <p class="font-medium text-orange-900">gopalakrishnalakshminarasimha@gmail.com</p>
-          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+  <div id="root">
+    <section id="contact_info" class="py-24 bg-orange-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-orange-900 mb-4">Contact Us</h2>
+          <p class="text-lg text-orange-700">Reach out to us for any queries or assistance</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <section id="contact_info" class="py-24 bg-orange-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-orange-900 mb-4">Contact Us</h2>
-        <p class="text-lg text-orange-700">Reach out to us for any queries or assistance</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Contact Information -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <h3 class="text-xl font-semibold text-orange-900 mb-6">Temple Office</h3>
-          <div class="space-y-4">
-            <div class="flex items-start">
-              <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-              <div class="ml-4">
-                <p class="text-orange-900">Shri Gopalakrishna Lakshminarasimha Temple</p>
-                <p class="text-orange-700">Pallipady, Badagabellur, Bantwal</p>
-                <p class="text-orange-700">Karnataka, India - 574219</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-              </svg>
-              <div class="ml-4">
-                <p class="text-orange-900">+91 7760685324 / 8277195323 </p>
-                <p class="text-orange-700">Office Hours: 8:00 AM - 6:00 PM</p>
-                <p class="text-orange-900">gopalakrishnalakshminarasimha@gmail.com</p>
-                <p class="text-orange-700">For general inquiries</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <div class="ml-4 w-full">
-                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7963303.222535982!2d65.7497176!3d12.9506172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a82fe6d18679%3A0xe71f26280749cdeb!2sShri%20Gopalakrishna%20Lakshmi%20Narasimha%20Temple%20Pallipadi!5e0!3m2!1sen!2sin!4v1735212920943!5m2!1sen!2sin" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Contact Information -->
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-xl font-semibold text-orange-900 mb-6">Temple Office</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-orange-900">Shri Gopalakrishna Lakshminarasimha Temple</p>
+                  <p class="text-orange-700">Pallipady, Badagabellur, Bantwal</p>
+                  <p class="text-orange-700">Karnataka, India - 574219</p>
                 </div>
               </div>
 
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="lg:bg-white rounded-lg shadow-lg p-8">
-          <h3 class="text-xl font-semibold text-orange-900 mb-6">Send us a Message</h3>
-          <form class="space-y-6" action="https://formspree.io/f/mblldqna"
-          method="POST">
-            <div>
-              <div>
-                <label class="block text-sm font-medium text-orange-900 mb-2">Email</label>
-                <input type="email"  name="email" class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" required>
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-orange-900">+91 7760685324 / 8277195323 </p>
+                  <p class="text-orange-700">Office Hours: 8:00 AM - 6:00 PM</p>
+                  <p class="text-orange-900">gopalakrishnalakshminarasimha@gmail.com</p>
+                  <p class="text-orange-700">For general inquiries</p>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label class="block text-sm font-medium text-orange-900 mb-2">Message</label>
-              <textarea name="message" rows="4" class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent" required></textarea>
-            </div>
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div class="ml-4 w-full">
+                  <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7963303.222535982!2d65.7497176!3d12.9506172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a82fe6d18679%3A0xe71f26280749cdeb!2sShri%20Gopalakrishna%20Lakshmi%20Narasimha%20Temple%20Pallipadi!5e0!3m2!1sen!2sin!4v1735212920943!5m2!1sen!2sin"
+                      style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
 
-            <div class="flex justify-end">
-              <button type="submit" class="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300">
-                Send Message
-              </button>
+              </div>
+
             </div>
-          </form>
           </div>
-      </div>
 
-      <!-- Social Media Links -->
-      <div class="mt-12 text-center">
-        <h4 class="text-lg font-semibold text-orange-900 mb-4">Connect With Us</h4>
-        <div class="flex justify-center space-x-6">
-          <a href="https://www.youtube.com/@glntemple" class="text-orange-600 hover:text-orange-700">
-            <span class="sr-only">YouTube</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-          </a>
-          <a href="https://chat.whatsapp.com/Egyp1QEbvIkAeNzPC8TfzS" class="text-orange-600 hover:text-orange-700">
-            <span class="sr-only">WhatsApp</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.15 1.6 5.95L0 24l6.18-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.63-.5-5.2-1.45l-.37-.22-3.67.97.98-3.67-.22-.37A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm4.85-7.15c-.2-.1-1.17-.58-1.35-.65-.18-.07-.31-.1-.45.1-.13.2-.52.65-.65.78-.12.13-.23.15-.43.05-.2-.1-.85-.31-1.62-.99-.6-.53-1-1.18-1.12-1.38-.12-.2-.01-.31.09-.41.1-.1.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.62-1.48-.16-.4-.32-.34-.45-.35-.12-.01-.25-.01-.38-.01-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.17 3.45 3.04.48.21.85.34 1.14.44.48.15.92.13 1.27.08.39-.06 1.17-.48 1.34-.94.17-.46.17-.85.12-.94-.05-.09-.18-.14-.38-.24z"></path>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/share/19cZMMsLBA/" class="text-orange-600 hover:text-orange-700">
-            <span class="sr-only">Facebook</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
+          <!-- Contact Form -->
+          <div class="lg:bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-xl font-semibold text-orange-900 mb-6">Send us a Message</h3>
+            <form class="space-y-6" action="https://formspree.io/f/mblldqna" method="POST">
+              <div>
+                <div>
+                  <label class="block text-sm font-medium text-orange-900 mb-2">Email</label>
+                  <input type="email" name="email"
+                    class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    required>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-orange-900 mb-2">Message</label>
+                <textarea name="message" rows="4"
+                  class="w-full px-4 py-2 border border-orange-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  required></textarea>
+              </div>
+
+              <div class="flex justify-end">
+                <button type="submit"
+                  class="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors duration-300">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-</div>
-</htmlCode><htmlCode>
-<div id="root">
-  <footer id="footer" class="bg-orange-900 text-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Temple Info -->
-        <div class="space-y-4">
-          <h3 class="text-xl font-bold text-white mb-4">GLN Temple</h3>
-          <p class="text-orange-200">Shri Gopalakrishna Lakshminarasimha Temple</p>
-          <p class="text-orange-200">Pallipady, Karnataka</p>
-          <div class="flex space-x-4 mt-4">
-            <a href="https://www.youtube.com/@glntemple" class="text-orange-200 hover:text-white">
+
+        <!-- Social Media Links -->
+        <div class="mt-12 text-center">
+          <h4 class="text-lg font-semibold text-orange-900 mb-4">Connect With Us</h4>
+          <div class="flex justify-center space-x-6">
+            <a href="https://www.youtube.com/@glntemple" class="text-orange-600 hover:text-orange-700">
               <span class="sr-only">YouTube</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
               </svg>
             </a>
-            <a href="https://chat.whatsapp.com/Egyp1QEbvIkAeNzPC8TfzS" class="text-orange-200 hover:text-white">
+            <a href="https://chat.whatsapp.com/Egyp1QEbvIkAeNzPC8TfzS" class="text-orange-600 hover:text-orange-700">
               <span class="sr-only">WhatsApp</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.15 1.6 5.95L0 24l6.18-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.63-.5-5.2-1.45l-.37-.22-3.67.97.98-3.67-.22-.37A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm4.85-7.15c-.2-.1-1.17-.58-1.35-.65-.18-.07-.31-.1-.45.1-.13.2-.52.65-.65.78-.12.13-.23.15-.43.05-.2-.1-.85-.31-1.62-.99-.6-.53-1-1.18-1.12-1.38-.12-.2-.01-.31.09-.41.1-.1.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.62-1.48-.16-.4-.32-.34-.45-.35-.12-.01-.25-.01-.38-.01-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.17 3.45 3.04.48.21.85.34 1.14.44.48.15.92.13 1.27.08.39-.06 1.17-.48 1.34-.94.17-.46.17-.85.12-.94-.05-.09-.18-.14-.38-.24z" clip-rule="evenodd"/>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.15 1.6 5.95L0 24l6.18-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.63-.5-5.2-1.45l-.37-.22-3.67.97.98-3.67-.22-.37A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm4.85-7.15c-.2-.1-1.17-.58-1.35-.65-.18-.07-.31-.1-.45.1-.13.2-.52.65-.65.78-.12.13-.23.15-.43.05-.2-.1-.85-.31-1.62-.99-.6-.53-1-1.18-1.12-1.38-.12-.2-.01-.31.09-.41.1-.1.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.62-1.48-.16-.4-.32-.34-.45-.35-.12-.01-.25-.01-.38-.01-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.17 3.45 3.04.48.21.85.34 1.14.44.48.15.92.13 1.27.08.39-.06 1.17-.48 1.34-.94.17-.46.17-.85.12-.94-.05-.09-.18-.14-.38-.24z">
+                </path>
               </svg>
             </a>
-            <a href="https://www.facebook.com/share/19cZMMsLBA/" class="text-orange-200 hover:text-white">
+            <a href="https://www.facebook.com/share/19cZMMsLBA/" class="text-orange-600 hover:text-orange-700">
               <span class="sr-only">Facebook</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
           </div>
         </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li><a href="#temple_timings" class="text-orange-200 hover:text-white">Temple Timings</a></li>
-            <li><a href="#upcoming_events" class="text-orange-200 hover:text-white">Upcoming Events</a></li>
-            <li><a href="#temple_history" class="text-orange-200 hover:text-white">Temple History</a></li>
-            <li><a href="#media_gallery" class="text-orange-200 hover:text-white">Photo Gallery</a></li>
-            <li><a href="#donation_section" class="text-orange-200 hover:text-white">Make a Donation</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <svg class="h-5 w-5 text-orange-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-              </svg>
-              <span class="text-orange-200">+91 7760685324 / 8277195323</span>
-            </li>
-            <li class="flex items-center">
-              <svg class="h-5 w-5 text-orange-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-              <span class="text-orange-200">gopalakrishnalakshminarasimha@gmail.com</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Language Selector -->
-        <div>
-          <h3 class="text-lg font-semibold text-white mb-4">Select Language</h3>
-          <select class="bg-orange-800 text-orange-200 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
-            <option value="en">English</option>
-            <option value="ka">ಕನ್ನಡ</option>
-          </select>
-        </div>
       </div>
+    </section>
+  </div>
+</htmlCode>
+<htmlCode>
+  <div id="root">
+    <footer id="footer" class="bg-orange-900 text-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Temple Info -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white mb-4">GLN Temple</h3>
+            <p class="text-orange-200">Shri Gopalakrishna Lakshminarasimha Temple</p>
+            <p class="text-orange-200">Pallipady, Karnataka</p>
+            <div class="flex space-x-4 mt-4">
+              <a href="https://www.youtube.com/@glntemple" class="text-orange-200 hover:text-white">
+                <span class="sr-only">YouTube</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                </svg>
+              </a>
+              <a href="https://chat.whatsapp.com/Egyp1QEbvIkAeNzPC8TfzS" class="text-orange-200 hover:text-white">
+                <span class="sr-only">WhatsApp</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.15 1.6 5.95L0 24l6.18-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22c-1.85 0-3.63-.5-5.2-1.45l-.37-.22-3.67.97.98-3.67-.22-.37A9.94 9.94 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm4.85-7.15c-.2-.1-1.17-.58-1.35-.65-.18-.07-.31-.1-.45.1-.13.2-.52.65-.65.78-.12.13-.23.15-.43.05-.2-.1-.85-.31-1.62-.99-.6-.53-1-1.18-1.12-1.38-.12-.2-.01-.31.09-.41.1-.1.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.08-.62-1.48-.16-.4-.32-.34-.45-.35-.12-.01-.25-.01-.38-.01-.13 0-.35.05-.53.25-.18.2-.7.68-.7 1.65s.72 1.92.82 2.05c.1.13 1.42 2.17 3.45 3.04.48.21.85.34 1.14.44.48.15.92.13 1.27.08.39-.06 1.17-.48 1.34-.94.17-.46.17-.85.12-.94-.05-.09-.18-.14-.38-.24z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/share/19cZMMsLBA/" class="text-orange-200 hover:text-white">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-      <!-- Bottom Bar -->
-      <div class="border-t border-orange-800 mt-12 pt-8">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-orange-300 text-sm">© 2025 GLN Temple. All rights reserved.</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" class="text-orange-300 hover:text-white text-sm">Privacy Policy</a>
-            <a href="#" class="text-orange-300 hover:text-white text-sm">Terms of Service</a>
-            <a href="#" class="text-orange-300 hover:text-white text-sm">Sitemap</a>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#temple_timings" class="text-orange-200 hover:text-white">Temple Timings</a></li>
+              <li><a href="#upcoming_events" class="text-orange-200 hover:text-white">Upcoming Events</a></li>
+              <li><a href="#temple_history" class="text-orange-200 hover:text-white">Temple History</a></li>
+              <li><a href="#media_gallery" class="text-orange-200 hover:text-white">Photo Gallery</a></li>
+              <li><a href="#donation_section" class="text-orange-200 hover:text-white">Make a Donation</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-orange-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span class="text-orange-200">+91 7760685324 / 8277195323</span>
+              </li>
+              <li class="flex items-center">
+                <svg class="h-5 w-5 text-orange-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="text-orange-200">gopalakrishnalakshminarasimha@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Language Selector -->
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-4">Select Language</h3>
+            <select
+              class="bg-orange-800 text-orange-200 rounded-md px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <option value="en">English</option>
+              <option value="ka">ಕನ್ನಡ</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-orange-800 mt-12 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-orange-300 text-sm">© 2025 GLN Temple. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" class="text-orange-300 hover:text-white text-sm">Privacy Policy</a>
+              <a href="#" class="text-orange-300 hover:text-white text-sm">Terms of Service</a>
+              <a href="#" class="text-orange-300 hover:text-white text-sm">Sitemap</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</div>
-<script>
-document.getElementById('mobile-menu-button').addEventListener('click', function() {
-  var menu = document.getElementById('mobile-menu');
-  if (menu.classList.contains('hidden')) {
-    menu.classList.remove('hidden');
-    this.setAttribute('aria-expanded', 'true');
-  } else {
-    menu.classList.add('hidden');
-    this.setAttribute('aria-expanded', 'false');
-  }
-});
-
-// Hide mobile menu when a link is clicked
-var mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
-  mobileMenuLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
+    </footer>
+  </div>
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
       var menu = document.getElementById('mobile-menu');
-      menu.classList.add('hidden');
-      document.getElementById('mobile-menu-button').setAttribute('aria-expanded', 'false');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        this.setAttribute('aria-expanded', 'true');
+      } else {
+        menu.classList.add('hidden');
+        this.setAttribute('aria-expanded', 'false');
+      }
     });
-  });
-</script>
+
+    // Hide mobile menu when a link is clicked
+    var mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+    mobileMenuLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.add('hidden');
+        document.getElementById('mobile-menu-button').setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </htmlCode>
