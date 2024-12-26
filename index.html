@@ -188,6 +188,26 @@
 
   <!-- Base Styles -->
   <style>
+
+    .hero-section {
+      background-image: url('https://glntemple.org/images/og_img.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(255, 165, 0, 0.5), rgba(255, 165, 0, 0.5));
+      z-index: -1;
+    }
+
     * {
       -ms-overflow-style: none;
       /* IE and Edge */
