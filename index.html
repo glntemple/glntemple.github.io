@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shri Gopalakrishna Lakshminarasimha Temple, Pallipady</title>
-  <meta name="description" content="Shri Gopalakrishna Lakshminarasimha Temple in Pallipady is a sacred space for divine connection. Explore our history, events, and ways to contribute.">
+  <meta name="description" content="Shri Gopalakrishna Lakshminarasimha Temple in Pallipady is a sacred space for divine connection. Explore temple history, events, and ways to contribute.">
   <meta name="keywords" content="glntemple, Shri Gopalakrishna Lakshminarasimha Temple, Pallipady, Pallipadi, kariyangala, badagabellur , mogaru, margadangadi, temple history, temple events, temple donations, divine connection">
   <meta name="theme-color" content="#ffffff">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -591,7 +591,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl font-bold text-orange-900 mb-4">Media Gallery</h2>
-          <p class="text-lg text-orange-700">Experience divine moments through our photo and video collections</p>
+          <p class="text-lg text-orange-700">Experience divine moments through temples photo and video collections</p>
         </div>
 
         <!-- Gallery Tabs -->
@@ -1322,10 +1322,14 @@
     }
 
     const upiDetails = {
-      pa: "shrig94811134@barodampay" // Payee UPI ID
+      pa: "shrig94811134@barodampay", // Payee UPI ID
+      am: "1",
+      cu: "INR",
+      tn: "GLNTemple Pay Instantly"
     };
 
-    const paymentUrl = `upi://pay?pa=${upiDetails.pa}`;
+    const paymentUrl = `upi://pay?pa=${upiDetails.pa}&pn=Test%20Name&mc=1234&tid=1234567890&tr=${upiDetails.tn}&am=${upiDetails.am}&cu=${upiDetails.cu}`;
+
 
     // Detect if the page is opened on a mobile device
     function isMobile() {
@@ -1361,7 +1365,6 @@
 
       iframe.onerror = function () {
         document.body.removeChild(iframe);
-        //alert("No UPI app found to process the payment.");
       };
     }
 
