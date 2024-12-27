@@ -61,8 +61,8 @@
               950: '#030303',
             },
             secondary: {
-              50: '#f8f8f8',
-              100: '#e8e8e8',
+              50: '#f8fafc',
+              100: '#f1f5f9',
               200: '#d3d3d3',
               300: '#a3a3a3',
               400: '#737373',
@@ -416,8 +416,10 @@
             <!-- Logo/Brand -->
 
             <div class="flex-shrink-0 flex items-center">
-              <img src="images/logo.png" alt="" class="h-8 w-8 mr-2">
-              <h1 class="text-2xl font-bold text-orange-800">GLN Temple</h1>
+              <a href="#" class="flex items-center">
+                <img src="images/logo.png" alt="" class="h-8 w-8 mr-2">
+                <h1 class="text-2xl font-bold text-orange-800">GLN Temple</h1>
+              </a>
             </div>
 
             <!-- Desktop Navigation -->
@@ -473,19 +475,19 @@
       </nav>
 
       <!-- Hero Section -->
-      <div class="hero-section pt-16 bg-gradient-to-b from-orange-50 to-orange-100">
+      <div class="hero-section pt-16 from-orange-50 to-orange-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-900 mb-6">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
             Shri Gopalakrishna Lakshminarasimha Temple
           </h1>
-          <p class="text-xl sm:text-2xl text-orange-800 mb-8">Pallipady - A Sacred Space for Divine Connection</p>
+          <p class="text-xl sm:text-2xl text-white mb-8">Pallipady - A Sacred Space for Divine Connection</p>
           <div class="flex justify-center space-x-4">
             <a href="#temple_timings"
               class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
               View Timings
             </a>
             <a href="#upcoming_events"
-              class="inline-flex items-center px-6 py-3 border border-orange-600 text-base font-medium rounded-md text-orange-600 bg-transparent hover:bg-orange-50">
+              class="inline-flex items-center px-6 py-3 border border-orange-600 text-base font-medium rounded-md text-white bg-transparent hover:bg-orange-50">
               Upcoming Events
             </a>
           </div>
@@ -1041,7 +1043,7 @@
               </div>
 
               <!-- Direct Payment Buttons -->
-              <div class="grid grid-cols-2 gap-4">
+              <div id="payment-buttons" class="grid grid-cols-2 gap-4">
                 <button
                   class="w-full py-3 px-4 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
                   Google Pay
