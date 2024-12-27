@@ -1323,13 +1323,10 @@
 
     const upiDetails = {
       pa: "shrig94811134@barodampay", // Payee UPI ID
-      am: "1",
-      cu: "INR",
-      tn: "GLNTemple Pay Instantly"
+      tn: "GLNTemple Pay Instant"
     };
 
-    const paymentUrl = `upi://pay?pa=${upiDetails.pa}&pn=Test%20Name&mc=1234&tid=1234567890&tr=${upiDetails.tn}&am=${upiDetails.am}&cu=${upiDetails.cu}`;
-
+    const paymentUrl = `upi://pay?pa=${upiDetails.pa}&tn=${upiDetails.tn}`;
 
     // Detect if the page is opened on a mobile device
     function isMobile() {
