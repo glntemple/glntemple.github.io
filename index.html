@@ -1052,12 +1052,40 @@
                 </div>
               </div>
               
-              <!-- Direct Payment Button -->
-              <div id="buttonContainer" class="grid">
-                <!-- Button for UPI apps will be dynamically added here -->
+              <!-- Bank Account Details-->
+              <div class="p-4 bg-orange-50 rounded-lg">
+                <p class="text-orange-900 font-medium">Bank Account Details:</p>
+                <div class="mt-2">
+                  <table class="w-full">
+                    <tbody>
+                      <tr>
+                        <td class="text-orange-900 font-medium">Account Name:</td>
+                        <td class="text-orange-800">Shri Gopala Krishna Lakshmi Narasimha</td>
+                      </tr>
+                      <tr>
+                        <td class="text-orange-900 font-medium">Account Number:</td>
+                        <td class="text-orange-800">70930200001134</td>
+                      </tr>
+                      <tr>
+                        <td class="text-orange-900 font-medium">IFSC Code:</td>
+                        <td class="text-orange-800">BARBOVJPOLA</td>
+                      </tr>
+                      <tr>
+                        <td class="text-orange-900 font-medium">Bank Name:</td>
+                        <td class="text-orange-800">Bank of Baroda</td>
+                      </tr>
+                      <tr>
+                        <td class="text-orange-900 font-medium">Branch:</td>
+                        <td class="text-orange-800">Polali</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              
-              
+              <!-- Direct Payment Button -->
+              <!-- <div id="buttonContainer" class="grid"> -->
+                <!-- Button for UPI apps will be dynamically added here -->
+              <!-- </div> -->
             </div>
 
             <!-- Note -->
@@ -1321,54 +1349,54 @@
       });
     }
 
-    const upiDetails = {
-      pa: "shrig94811134@barodampay", // Payee UPI ID
-      tn: "GLNTemple Pay Instant"
-    };
+    // const upiDetails = {
+    //   pa: "shrig94811134@barodampay", // Payee UPI ID
+    //   tn: "GLNTemple Pay Instant"
+    // };
 
-    const paymentUrl = `upi://pay?pa=${upiDetails.pa}&tn=${upiDetails.tn}`;
+    // const paymentUrl = `upi://pay?pa=${upiDetails.pa}&tn=${upiDetails.tn}`;
 
-    // Detect if the page is opened on a mobile device
-    function isMobile() {
-      return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    }
+    // // Detect if the page is opened on a mobile device
+    // function isMobile() {
+    //   return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    // }
 
-    // Check if a UPI app is available and enable the button
-    function setupPayButton() {
-      const buttonContainer = document.getElementById("buttonContainer");
+    // // Check if a UPI app is available and enable the button
+    // function setupPayButton() {
+    //   const buttonContainer = document.getElementById("buttonContainer");
 
-      const button = document.createElement("button");
-      button.id = "payButton";
-      button.textContent = "Pay Instantly";
-      button.classList.add("w-full", "py-3", "px-4", "bg-orange-600", "text-white", "rounded-lg", "font-medium", "hover:bg-orange-700", "transition-colors", "duration-300");
+    //   const button = document.createElement("button");
+    //   button.id = "payButton";
+    //   button.textContent = "Pay Instantly";
+    //   button.classList.add("w-full", "py-3", "px-4", "bg-orange-600", "text-white", "rounded-lg", "font-medium", "hover:bg-orange-700", "transition-colors", "duration-300");
 
-      button.onclick = function () {
-        window.location.href = paymentUrl;
-      };
+    //   button.onclick = function () {
+    //     window.location.href = paymentUrl;
+    //   };
 
-      buttonContainer.appendChild(button);
+    //   buttonContainer.appendChild(button);
 
-      // Simulate checking the UPI app availability
-      const iframe = document.createElement("iframe");
-      iframe.style.display = "none";
-      iframe.src = paymentUrl;
+    //   // Simulate checking the UPI app availability
+    //   const iframe = document.createElement("iframe");
+    //   iframe.style.display = "none";
+    //   iframe.src = paymentUrl;
 
-      document.body.appendChild(iframe);
+    //   document.body.appendChild(iframe);
 
-      iframe.onload = function () {
-        button.disabled = false;
-        document.body.removeChild(iframe);
-      };
+    //   iframe.onload = function () {
+    //     button.disabled = false;
+    //     document.body.removeChild(iframe);
+    //   };
 
-      iframe.onerror = function () {
-        document.body.removeChild(iframe);
-      };
-    }
+    //   iframe.onerror = function () {
+    //     document.body.removeChild(iframe);
+    //   };
+    // }
 
-    // Initialize only if it's mobile
-    if (isMobile()) {
-      setupPayButton();
-    }
+    // // Initialize only if it's mobile
+    // if (isMobile()) {
+    //   setupPayButton();
+    // }
 
   </script>
 </htmlCode>
