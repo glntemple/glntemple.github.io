@@ -270,6 +270,30 @@
         content: " (" attr(href) ")";
       }
     }
+
+    .upi-app {
+      display: inline-block;
+      margin: 10px;
+    }
+    .upi-app button {
+      display: flex;
+      align-items: center;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .upi-app button img {
+      height: 20px;
+      margin-right: 10px;
+    }
+    .upi-app button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
   </style>
 
   <!-- Enhanced Image Handler -->
@@ -1051,7 +1075,10 @@
                 </div>
               </div>
 
-              <!-- Direct Payment Buttons -->
+              <div id="upiAppsContainer">
+                <!-- Buttons for UPI apps will be dynamically added here -->
+              </div>
+              <!-- Direct Payment Buttons
               <div id="payment-buttons" class="grid grid-cols-2 gap-4">
                 <button
                   class="w-full py-3 px-4 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
@@ -1061,7 +1088,7 @@
                   class="w-full py-3 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300">
                   PhonePe
                 </button>
-              </div>
+              </div> -->
             </div>
 
             <!-- Note -->
@@ -1324,5 +1351,95 @@
         console.error('Failed to copy: ', err);
       });
     }
+
+    const upiDetails = {
+      pa: "shrig94811134@barodampay" // Payee UPI ID
+    };
+
+    const upiApps = [
+      {
+        name: "Google Pay",
+        package: "com.google.android.apps.nbu.paisa.user",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Google_Pay_Logo.svg/1200px-Google_Pay_Logo.svg.png",
+        urlScheme: "upi://pay?pa=shrig94811134@barodampay"
+      },
+      {
+        name: "PhonePe",
+        package: "com.phonepe.app",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PhonePe_Logo.png/1200px-PhonePe_Logo.png",
+        urlScheme: "phonepe://pay?pa=shrig94811134@barodampay"
+      },
+      {
+        name: "Paytm",
+        package: "net.one97.paytm",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Paytm_Logo.svg/1200px-Paytm_Logo.svg.png",
+        urlScheme: "paytm://upi?pa=shrig94811134@barodampay"
+      },
+      {
+        name: "BHIM",
+        package: "in.org.npci.upiapp",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/BHIM_logo.svg/1200px-BHIM_logo.svg.png",
+        urlScheme: "upi://pay?pa=shrig94811134@barodampay"
+      }
+    ];
+
+    function testAppAvailability(app, callback) {
+      const iframe = document.createElement("iframe");
+      iframe.style.display = "none";
+      iframe.src = app.urlScheme;
+      document.body.appendChild(iframe);
+
+      let appOpened = false;
+
+      // Set a timeout to check if the app was opened
+      const timeout = setTimeout(() => {
+        if (!appOpened) {
+          callback(false);
+        }
+        document.body.removeChild(iframe);
+      }, 1500);
+
+      window.addEventListener("blur", () => {
+        appOpened = true;
+        clearTimeout(timeout);
+        callback(true);
+      });
+    }
+
+    function createAppButton(app, isAvailable) {
+      const container = document.getElementById("upiAppsContainer");
+      const appDiv = document.createElement("div");
+      appDiv.className = "upi-app";
+
+      const button = document.createElement("button");
+      button.disabled = !isAvailable;
+
+      if (isAvailable) {
+        button.onclick = () => (window.location.href = app.urlScheme);
+      }
+
+      const img = document.createElement("img");
+      img.src = app.logo;
+      img.alt = `${app.name} logo`;
+
+      const span = document.createElement("span");
+      span.textContent = app.name;
+
+      button.appendChild(img);
+      button.appendChild(span);
+      appDiv.appendChild(button);
+      container.appendChild(appDiv);
+    }
+
+    function init() {
+      upiApps.forEach((app) => {
+        testAppAvailability(app, (isAvailable) => {
+          createAppButton(app, isAvailable);
+        });
+      });
+    }
+
+    window.onload = init;
+
   </script>
 </htmlCode>
