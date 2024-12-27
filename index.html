@@ -271,25 +271,16 @@
       }
     }
 
-    .upi-app {
-      display: inline-block;
-      margin: 10px;
-    }
-    .upi-app button {
-      display: flex;
-      align-items: center;
+    #payButton {
       background-color: #007bff;
-      color: #fff;
+      color: white;
       border: none;
       border-radius: 5px;
-      padding: 10px;
+      padding: 15px 30px;
+      font-size: 16px;
       cursor: pointer;
     }
-    .upi-app button img {
-      height: 20px;
-      margin-right: 10px;
-    }
-    .upi-app button:disabled {
+    #payButton:disabled {
       background-color: #ccc;
       cursor: not-allowed;
     }
@@ -1075,20 +1066,11 @@
                 </div>
               </div>
 
-              <div id="upiAppsContainer" class="grid grid-cols-2 gap-4">
-                <!-- Buttons for UPI apps will be dynamically added here -->
+              <div id="buttonContainer" class="grid">
+                <!-- Button for UPI apps will be dynamically added here -->
               </div>
-              <!-- Direct Payment Buttons
-              <div id="payment-buttons" class="grid grid-cols-2 gap-4">
-                <button
-                  class="w-full py-3 px-4 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors duration-300">
-                  Google Pay
-                </button>
-                <button
-                  class="w-full py-3 px-4 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300">
-                  PhonePe
-                </button>
-              </div> -->
+              
+              <!-- Direct Payment Button -->
             </div>
 
             <!-- Note -->
@@ -1356,90 +1338,51 @@
       pa: "shrig94811134@barodampay" // Payee UPI ID
     };
 
-    const upiApps = [
-      {
-        name: "Google Pay",
-        package: "com.google.android.apps.nbu.paisa.user",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Google_Pay_Logo.svg/1200px-Google_Pay_Logo.svg.png",
-        urlScheme: "upi://pay?pa=shrig94811134@barodampay"
-      },
-      {
-        name: "PhonePe",
-        package: "com.phonepe.app",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PhonePe_Logo.png/1200px-PhonePe_Logo.png",
-        urlScheme: "phonepe://pay?pa=shrig94811134@barodampay"
-      },
-      {
-        name: "Paytm",
-        package: "net.one97.paytm",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Paytm_Logo.svg/1200px-Paytm_Logo.svg.png",
-        urlScheme: "paytm://upi?pa=shrig94811134@barodampay"
-      },
-      {
-        name: "BHIM",
-        package: "in.org.npci.upiapp",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/BHIM_logo.svg/1200px-BHIM_logo.svg.png",
-        urlScheme: "upi://pay?pa=shrig94811134@barodampay"
-      }
-    ];
+    const paymentUrl = `upi://pay?pa=${upiDetails.pa}`;
 
-    function testAppAvailability(app, callback) {
-      const iframe = document.createElement("iframe");
-      iframe.style.display = "none";
-      iframe.src = app.urlScheme;
-      document.body.appendChild(iframe);
-
-      let appOpened = false;
-
-      // Set a timeout to check if the app was opened
-      const timeout = setTimeout(() => {
-        if (!appOpened) {
-          callback(false);
-        }
-        document.body.removeChild(iframe);
-      }, 1500);
-
-      window.addEventListener("blur", () => {
-        appOpened = true;
-        clearTimeout(timeout);
-        callback(true);
-      });
+    // Detect if the page is opened on a mobile device
+    function isMobile() {
+      return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     }
 
-    function createAppButton(app, isAvailable) {
-      const container = document.getElementById("upiAppsContainer");
-      const appDiv = document.createElement("div");
-      appDiv.className = "upi-app";
+    // Check if a UPI app is available and enable the button
+    function setupPayButton() {
+      const buttonContainer = document.getElementById("buttonContainer");
 
       const button = document.createElement("button");
-      button.disabled = !isAvailable;
+      button.id = "payButton";
+      button.textContent = "Pay Instantly";
+      button.disabled = true;
+      button.classList.add("w-full", "py-3", "px-4", "bg-orange-600", "text-white", "rounded-lg", "font-medium", "hover:bg-orange-700", "transition-colors", "duration-300");
 
-      if (isAvailable) {
-        button.onclick = () => (window.location.href = app.urlScheme);
-      }
+      button.onclick = function () {
+        window.location.href = paymentUrl;
+      };
 
-      const img = document.createElement("img");
-      img.src = app.logo;
-      img.alt = `${app.name} logo`;
+      buttonContainer.appendChild(button);
 
-      const span = document.createElement("span");
-      span.textContent = app.name;
+      // Simulate checking the UPI app availability
+      const iframe = document.createElement("iframe");
+      iframe.style.display = "none";
+      iframe.src = paymentUrl;
 
-      button.appendChild(img);
-      button.appendChild(span);
-      appDiv.appendChild(button);
-      container.appendChild(appDiv);
+      document.body.appendChild(iframe);
+
+      iframe.onload = function () {
+        button.disabled = false;
+        document.body.removeChild(iframe);
+      };
+
+      iframe.onerror = function () {
+        document.body.removeChild(iframe);
+        //alert("No UPI app found to process the payment.");
+      };
     }
 
-    function init() {
-      upiApps.forEach((app) => {
-        testAppAvailability(app, (isAvailable) => {
-          createAppButton(app, isAvailable);
-        });
-      });
+    // Initialize only if it's mobile
+    if (isMobile()) {
+      setupPayButton();
     }
-
-    window.onload = init;
 
   </script>
 </htmlCode>
